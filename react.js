@@ -1,6 +1,8 @@
 module.exports = {
   "extends": "airbnb",
   "rules": {
+    "indent": [2, "tab"],
+    "no-tabs": 0,
     "no-multi-spaces": 0,
     "no-underscore-dangle": [0],
     "consistent-return": 0,
@@ -27,7 +29,9 @@ module.exports = {
     "arrow-body-style": ["warn","as-needed"],
     "max-len": [2, 220, 2],
     "no-debugger": "warn",
-    "strict": [0, "global"]
+    "strict": [0, "global"],
+    "jsx-a11y/href-no-hash": "off",
+    "jsx-a11y/anchor-is-valid": ["warn", { "aspects": ["invalidHref"] }]
   },
   "parserOptions": {
     "ecmaVersion": 6,
